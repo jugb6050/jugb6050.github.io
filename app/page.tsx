@@ -40,31 +40,31 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <a>
-            Welcome to my portfolio. My name is Raiyan Jugbhery and I&apos;m
-            currently a junior developer aspiring to find a new work pathway and
-            environment. I've graduated through Wilfrid Laurier University with
-            a BSc in Computer Science with a minor in business. I have
-            maintained a 3.0 GPA throughout my studies. I&apos;m based out of
-            Toronto&sbquo; Ontario&sbquo; Canada&sbquo; but also have dual
-            citizenship in the U.S.A and am willing to relocate anywhere that is
-            required! I would say that I enjoy full-stack development&sbquo; but
-            I definitely have the most fun with front-end design! I love
-            modern&sbquo; minimalistic designs. I love diversifying my
-            interests. It helps prevent burnout&sbquo; and also gives you
-            multiple perspectives of life. My hobbies include: archery&sbquo;
-            music production&sbquo; robotics&sbquo; gaming&sbquo; and piloting.
-            Here&apos;s some fun facts about me! I released a bunch of music
-            officially on music platforms like apple music and spotify! My main
-            genres are RnB and Hip&ndash;Hop! I also played video games
-            professionally&sbquo; mainly a game called Valorant&sbquo; developed
-            by riot games&sbquo; whilst I finished my university studies. This
-            helped pay a lot of my bills while I studied! I enjoy gaming with
-            friends as leisure time because it also helps offload your daily
-            stresses. Last fact is that I&apos;m currently finishing the next
-            stages of my pilot&apos;s license&sbquo; and have also worked as a
-            flight instructor&sbquo; at the same company that I worked as a
-            software engineer for! I got lucky since it was a flight school &
-            flight simulation company!
+            Welcome to my portfolio and about me. My name is Raiyan Jugbhery and
+            I&apos;m currently a junior developer aspiring to find a new work
+            pathway and environment. I've graduated through Wilfrid Laurier
+            University with a BSc in Computer Science with a minor in business.
+            I have maintained a 3.0 GPA throughout my studies. I&apos;m based
+            out of Toronto&sbquo; Ontario&sbquo; Canada&sbquo; but also have
+            dual citizenship in the U.S.A and am willing to relocate anywhere
+            that is required! I would say that I enjoy full-stack
+            development&sbquo; but I definitely have the most fun with front-end
+            design! I love modern&sbquo; minimalistic designs. I love
+            diversifying my interests. It helps prevent burnout&sbquo; and also
+            gives you multiple perspectives of life. My hobbies include:
+            archery&sbquo; music production&sbquo; robotics&sbquo; gaming&sbquo;
+            and piloting. Here&apos;s some fun facts about me! I released a
+            bunch of music officially on music platforms like apple music and
+            spotify! My main genres are RnB and Hip&ndash;Hop! I also played
+            video games professionally&sbquo; mainly a game called
+            Valorant&sbquo; developed by riot games&sbquo; whilst I finished my
+            university studies. This helped pay a lot of my bills while I
+            studied! I enjoy gaming with friends as leisure time because it also
+            helps offload your daily stresses. Last fact is that I&apos;m
+            currently finishing the next stages of my pilot&apos;s
+            license&sbquo; and have also worked as a flight instructor&sbquo; at
+            the same company that I worked as a software engineer for! I got
+            lucky since it was a flight school & flight simulation company!
           </a>
         </ol>
         <a className="font-[family-name:var(--font-geist-mono)]">
