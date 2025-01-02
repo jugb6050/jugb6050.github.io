@@ -42,10 +42,9 @@ export default function Home() {
         </a>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
+          <Link
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/"
           >
             <Image
               className=""
@@ -54,44 +53,39 @@ export default function Home() {
               width={20}
               height={20}
             />
-            <Link href="/">Home</Link>
-          </a>
-          <a
+            Home
+          </Link>
+
+          <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            target="_blank"
-            rel=""
+            href="/pages/techstacks"
           >
-            <Link href="/pages/techstacks">Tech Stacks</Link>
-          </a>
-          <a
+            Tech Stacks
+          </Link>
+          <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            target="_blank"
-            rel=""
+            href="/pages/projects"
           >
-            <Link href="/pages/projects">Projects</Link>
-          </a>
-          <a
+            Projects
+          </Link>
+          <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            target="_blank"
-            rel=""
+            href="/pages/workexp"
           >
-            <Link href="/pages/workexp">Work Experience</Link>
-          </a>
-          <a
+            Work Experiences
+          </Link>
+          <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            target="_blank"
-            rel=""
+            href="/pages/hobbies"
           >
-            <Link href="/pages/workexp">Hobbies</Link>
-          </a>
+            Hobbies
+          </Link>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="/"
-          target="_blank"
-          rel=""
         >
           <Image
             className="invert"
@@ -102,12 +96,11 @@ export default function Home() {
             height={16}
           />
           Back to Home
-        </a>
+        </Link>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="mailto:rjugbhery@gmail.com"
           target="_blank"
-          rel=""
         >
           <Image
             className="invert"
@@ -123,7 +116,6 @@ export default function Home() {
           className="flex items-center gap-1 hover:underline hover:underline-offset-4"
           href="https://www.instagram.com/raiyanj_/"
           target="_blank"
-          rel=""
         >
           <Image
             className="invert"
@@ -139,7 +131,6 @@ export default function Home() {
           className="flex items-center gap-1 hover:underline hover:underline-offset-4"
           href="https://github.com/jugb6050"
           target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             className="invert"
@@ -155,7 +146,6 @@ export default function Home() {
           className="flex items-center gap-0 hover:underline hover:underline-offset-4"
           href="https://open.spotify.com/artist/3T19bmRvGGRAV8u4QMeaP3?si=-Gi9PJ9XToirZ5iINxGgcQ"
           target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             className="invert"

@@ -28,7 +28,12 @@ export default function Home() {
             music and spotify! My main genres are RnB and Hip-Hop! I also played
             video games professionally, mainly a game called Valorant, developed
             by Riot Games, whilst I finished my university studies. This helped
-            pay a lot of my bills while I studied!
+            pay a lot of my bills while I studied! I enjoy gaming with friends
+            as leisure time because it also helps offload your daily stresses.
+            Last fact, is that I'm currently finishing the next stages of my
+            pilot's license, and have also worked as a flight instructor, at the
+            same company that I worked as a software engineer for! I got lucky
+            since it was a flight school & flight simulation company!
           </a>
         </ol>
         <a className="font-[family-name:var(--font-geist-mono)]">
@@ -37,28 +42,18 @@ export default function Home() {
         </a>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
+          <Link
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/"
           >
-            <Image
-              className=""
-              src="/home.svg"
-              alt="home logo"
-              width={20}
-              height={20}
-            />
-            <Link href="/">Home</Link>
-          </a>
+            Back Home
+          </Link>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="/"
-          target="_blank"
-          rel=""
         >
           <Image
             className="invert"
@@ -69,12 +64,11 @@ export default function Home() {
             height={16}
           />
           Back to Home
-        </a>
+        </Link>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="mailto:rjugbhery@gmail.com"
           target="_blank"
-          rel=""
         >
           <Image
             className="invert"
@@ -90,7 +84,6 @@ export default function Home() {
           className="flex items-center gap-1 hover:underline hover:underline-offset-4"
           href="https://www.instagram.com/raiyanj_/"
           target="_blank"
-          rel=""
         >
           <Image
             className="invert"
@@ -106,7 +99,6 @@ export default function Home() {
           className="flex items-center gap-1 hover:underline hover:underline-offset-4"
           href="https://github.com/jugb6050"
           target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             className="invert"
@@ -122,7 +114,6 @@ export default function Home() {
           className="flex items-center gap-0 hover:underline hover:underline-offset-4"
           href="https://open.spotify.com/artist/3T19bmRvGGRAV8u4QMeaP3?si=-Gi9PJ9XToirZ5iINxGgcQ"
           target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             className="invert"
