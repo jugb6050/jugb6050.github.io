@@ -4,6 +4,26 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
+        <a className="font-[family-name:var(--font-geist-mono)]">
+          {" "}
+          Raiyan Jugbhery - Junior Developer |{" "}
+          <a
+            className="no-underline hover:underline"
+            href="https://github.com/jugb6050"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>{" "}
+          |{" "}
+          <a
+            className="no-underline hover:underline"
+            href="mailto:rjugbhery@gmail.com"
+          >
+            rjugbhery@gmail.com
+          </a>{" "}
+          | Toronto&sbquo; Ontario &sbquo; Canada | Can relocate anywhere
+        </a>
         <Image
           className=""
           src="/me.png"
@@ -16,26 +36,29 @@ export default function Home() {
           <a>
             Welcome to my portfolio. My name is Raiyan Jugbhery and I&apos;m
             currently a junior developer aspiring to find a new work pathway and
-            environment. I&apos;m based out of Toronto&sbquo; Ontario&sbquo;
-            Canada&sbquo; but also have dual citizenship in the U.S.A and am
-            willing to relocate anywhere that is required! I would say that I
-            enjoy full-stack development&sbquo; but I definitely have the most
-            fun with front-end design! I love modern&sbquo; minimalistic
-            designs. I love diversifying my interests. It helps prevent
-            burnout&sbquo; and also gives you multiple perspectives of life. My
-            hobbies include: archery&sbquo; music production&sbquo;
-            robotics&sbquo; gaming&sbquo; and piloting. Here&apos;s some fun
-            facts about me! I released a bunch of music officially on music
-            platforms like apple music and spotify! My main genre99s are RnB and
-            Hip&ndash;Hop! I also played video games professionally&sbquo;
-            mainly a game called Valorant&sbquo; developed by riot games&sbquo;
-            whilst I finished my university studies. This helped pay a lot of my
-            bills while I studied! I enjoy gaming with friends as leisure time
-            because it also helps offload your daily stresses. Last fact is that
-            I&apos;m currently finishing the next stages of my pilot&apos;s
-            license&sbquo; and have also worked as a flight instructor&sbquo; at
-            the same company that I worked as a software engineer for! I got
-            lucky since it was a flight school & flight simulation company!
+            environment. I've graduated through Wilfrid Laurier University with
+            a BSc in Computer Science with a minor in business. I have
+            maintained a 3.0 GPA throughout my studies. I&apos;m based out of
+            Toronto&sbquo; Ontario&sbquo; Canada&sbquo; but also have dual
+            citizenship in the U.S.A and am willing to relocate anywhere that is
+            required! I would say that I enjoy full-stack development&sbquo; but
+            I definitely have the most fun with front-end design! I love
+            modern&sbquo; minimalistic designs. I love diversifying my
+            interests. It helps prevent burnout&sbquo; and also gives you
+            multiple perspectives of life. My hobbies include: archery&sbquo;
+            music production&sbquo; robotics&sbquo; gaming&sbquo; and piloting.
+            Here&apos;s some fun facts about me! I released a bunch of music
+            officially on music platforms like apple music and spotify! My main
+            genres are RnB and Hip&ndash;Hop! I also played video games
+            professionally&sbquo; mainly a game called Valorant&sbquo; developed
+            by riot games&sbquo; whilst I finished my university studies. This
+            helped pay a lot of my bills while I studied! I enjoy gaming with
+            friends as leisure time because it also helps offload your daily
+            stresses. Last fact is that I&apos;m currently finishing the next
+            stages of my pilot&apos;s license&sbquo; and have also worked as a
+            flight instructor&sbquo; at the same company that I worked as a
+            software engineer for! I got lucky since it was a flight school &
+            flight simulation company!
           </a>
         </ol>
         <a className="font-[family-name:var(--font-geist-mono)]">
@@ -112,7 +135,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Email
+          Email Me
         </a>
         <a
           className="flex items-center gap-1 hover:underline hover:underline-offset-4"
@@ -127,7 +150,7 @@ export default function Home() {
             width={23}
             height={23}
           />
-          Instagram
+          My Instagram
         </a>
         <a
           className="flex items-center gap-1 hover:underline hover:underline-offset-4"
@@ -142,7 +165,7 @@ export default function Home() {
             width={20}
             height={20}
           />
-          Github
+          My Github
         </a>
         <a
           className="flex items-center gap-0 hover:underline hover:underline-offset-4"
@@ -157,7 +180,7 @@ export default function Home() {
             width={32}
             height={32}
           />
-          Spotify
+          My Spotify
         </a>
       </footer>
     </div>
