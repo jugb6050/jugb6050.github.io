@@ -4,26 +4,32 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
-        <a className="font-[family-name:var(--font-geist-mono)]">
-          {" "}
-          Raiyan Jugbhery - Junior Developer |{" "}
+        <div className="flex flex-row justify-items-center items-center">
+          <a className="font-[family-name:var(--font-geist-mono)]">
+            Raiyan Jugbhery &ndash; Junior Developer&nbsp;
+          </a>
+          <>|&nbsp;&nbsp;</>
           <a
-            className="no-underline hover:underline"
+            className="font-[family-name:var(--font-geist-mono)] no-underline hover:underline"
             href="https://github.com/jugb6050"
             target="_blank"
             rel="noopener noreferrer"
           >
             github
-          </a>{" "}
-          |{" "}
+          </a>
+          <a>&nbsp;&nbsp;|&nbsp;&nbsp;</a>
           <a
-            className="no-underline hover:underline"
+            className="font-[family-name:var(--font-geist-mono)] no-underline hover:underline"
             href="mailto:rjugbhery@gmail.com"
           >
             rjugbhery@gmail.com
-          </a>{" "}
-          | Toronto&sbquo; Ontario &sbquo; Canada | Can relocate anywhere
-        </a>
+          </a>
+          <a className="font-[family-name:var(--font-geist-mono)]">
+            &nbsp;| Toronto&sbquo; Ontario &sbquo; Canada | Can relocate
+            anywhere
+          </a>
+        </div>
+
         <Image
           className=""
           src="/me.png"
