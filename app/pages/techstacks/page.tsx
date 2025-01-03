@@ -4,45 +4,93 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
-        <Image
-          className=""
-          src="/me.png"
-          alt="picture of raiyan"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <a>
-            Welcome to my portfolio. My name is Raiyan Jugbhery and I&apos;m
-            currently a junior developer aspiring to find a new work pathway and
-            environment. I&apos;m based out of Toronto&sbquo; Ontario&sbquo;
-            Canada&sbquo; but also have dual citizenship in the U.S.A and am
-            willing to relocate anywhere that is required! I would say that I
-            enjoy full-stack development&sbquo; but I definitely have the most
-            fun with front-end design! I love modern&sbquo; minimalistic
-            designs. I love diversifying my interests. It helps prevent
-            burnout&sbquo; and also gives you multiple perspectives of life. My
-            hobbies include: archery&sbquo; music production&sbquo;
-            robotics&sbquo; gaming&sbquo; and piloting. Here&apos;s some fun
-            facts about me! I released a bunch of music officially on music
-            platforms like apple music and spotify! My main genre99s are RnB and
-            Hip&ndash;Hop! I also played video games professionally&sbquo;
-            mainly a game called Valorant&sbquo; developed by riot games&sbquo;
-            whilst I finished my university studies. This helped pay a lot of my
-            bills while I studied! I enjoy gaming with friends as leisure time
-            because it also helps offload your daily stresses. Last fact is that
-            I&apos;m currently finishing the next stages of my pilot&apos;s
-            license&sbquo; and have also worked as a flight instructor&sbquo; at
-            the same company that I worked as a software engineer for! I got
-            lucky since it was a flight school & flight simulation company!
-          </a>
-        </ol>
-        <a className="font-[family-name:var(--font-geist-mono)]">
-          {" "}
-          Click any of the buttons below to get to more specific information!
+        <a className="text-2xl items-center justify-center font-[family-name:var(--font-geist-mono)]">
+          Here are some of the tech stacks that I use!
         </a>
-
+        <div className="flex gap-20 flex-wrap items-center justify-center pt-20 pb-10">
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/html.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/tailwind.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/javascript.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/ts.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover p-6"
+            src="/react.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+        </div>
+        <div className="flex gap-20 flex-wrap items-center justify-center pb-14">
+          <Image
+            className="rounded-full h-auto max-w-full object-cover invert"
+            src="/slownext.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/docker.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/kubernetes.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/swift.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/mongodb.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+        </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <Link
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"

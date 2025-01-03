@@ -2,15 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
-        <div className="flex flex-row justify-items-center items-center">
-          <a className="font-[family-name:var(--font-geist-mono)]">
-            Raiyan Jugbhery &ndash; Junior Developer&nbsp;
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-8 row-start-2 justify-items-center items-center sm:items-center">
+        <div className="flex flex-wrap justify-items-center items-center text-wrap">
+          <a className="font-[family-name:var(--font-geist-mono)] text-center">
+            Raiyan Jugbhery &ndash; Junior Developer&nbsp;|&nbsp;
           </a>
-          <>|&nbsp;&nbsp;</>
+
           <a
-            className="font-[family-name:var(--font-geist-mono)] no-underline hover:underline"
+            className="font-[family-name:var(--font-geist-mono)] no-underline hover:underline text-center"
             href="https://github.com/jugb6050"
             target="_blank"
             rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export default function Home() {
           </a>
           <a>&nbsp;&nbsp;|&nbsp;&nbsp;</a>
           <a
-            className="font-[family-name:var(--font-geist-mono)] no-underline hover:underline"
+            className="font-[family-name:var(--font-geist-mono)] no-underline hover:underline text-center"
             href="mailto:rjugbhery@gmail.com"
           >
             rjugbhery@gmail.com
@@ -39,19 +39,19 @@ export default function Home() {
           priority
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <a>
+          <a className="text-pretty">
             Welcome to my portfolio and about me. My name is Raiyan Jugbhery and
-            I&apos;m currently a junior developer aspiring to find a new work
-            pathway and environment. I've graduated through Wilfrid Laurier
-            University with a BSc in Computer Science with a minor in business.
-            I have maintained a 3.0 GPA throughout my studies. I&apos;m based
-            out of Toronto&sbquo; Ontario&sbquo; Canada&sbquo; but also have
-            dual citizenship in the U.S.A and am willing to relocate anywhere
-            that is required! I would say that I enjoy full-stack
-            development&sbquo; but I definitely have the most fun with front-end
-            design! I love modern&sbquo; minimalistic designs. I love
-            diversifying my interests. It helps prevent burnout&sbquo; and also
-            gives you multiple perspectives of life. My hobbies include:
+            I&apos;m 24. I am currently a junior developer aspiring to find a
+            new work pathway and environment. I've graduated through Wilfrid
+            Laurier University with a BSc in Computer Science with a minor in
+            business. I have maintained a 3.0 GPA throughout my studies.
+            I&apos;m based out of Toronto&sbquo; Ontario&sbquo; Canada&sbquo;
+            but also have dual citizenship in the U.S.A and am willing to
+            relocate anywhere that is required! I would say that I enjoy
+            full-stack development&sbquo; but I definitely have the most fun
+            with front-end design! I love modern&sbquo; minimalistic designs. I
+            love diversifying my interests. It helps prevent burnout&sbquo; and
+            also gives you multiple perspectives of life. My hobbies include:
             archery&sbquo; music production&sbquo; robotics&sbquo; gaming&sbquo;
             and piloting. Here&apos;s some fun facts about me! I released a
             bunch of music officially on music platforms like apple music and
