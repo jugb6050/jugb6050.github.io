@@ -1,11 +1,69 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import React, { useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+
 export default function Home() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 4000 }),
+  ]);
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-10 pt-4 gap-16 sm:pt-2 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 justify-items-center items-center sm:items-center">
-        <div className="flex flex-wrap justify-items-center items-center text-wrap">
-          <a className="font-[family-name:var(--font-geist-mono)] text-center">
+        <header className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+          <div className="flex gap-4 items-center flex-col sm:flex-row">
+            <Link
+              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+              href="/"
+            >
+              <Image
+                className=""
+                src="/home.svg"
+                alt="home logo"
+                width={20}
+                height={20}
+              />
+              Home
+            </Link>
+
+            <Link
+              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              href="https://pdfupload.io/docs/a3371ba9"
+              target="_blank"
+            >
+              Projects
+            </Link>
+            <Link
+              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              href="https://rose-deva-48.tiiny.site"
+              target="_blank"
+            >
+              Resume/CV
+            </Link>
+            <Link
+              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              href="https://github.com/jugb6050"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </Link>
+          </div>
+        </header>
+
+        <div className="flex flex-wrap justify-items-center items-center text-wrap sm:text-wrap">
+          <a className="font-[family-name:var(--font-geist-mono)]">
             Raiyan Jugbhery &ndash; Junior Developer&nbsp;|&nbsp;
           </a>
 
@@ -29,7 +87,6 @@ export default function Home() {
             anywhere
           </a>
         </div>
-
         <Image
           className=""
           src="/me.png"
@@ -38,7 +95,8 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+
+        <ol className="list-inside list-decimal text-lg text-center sm:text-center font-[family-name:var(--font-geist-mono)]">
           <a className="text-pretty">
             Welcome to my portfolio and about me. My name is Raiyan Jugbhery and
             I&apos;m 24. I am currently a junior developer aspiring to find a
@@ -53,10 +111,10 @@ export default function Home() {
             love diversifying my interests. It helps prevent burnout&sbquo; and
             also gives you multiple perspectives of life. My hobbies include:
             archery&sbquo; music production&sbquo; robotics&sbquo; gaming&sbquo;
-            and piloting. Here&apos;s some fun facts about me! I released a
-            bunch of music officially on music platforms like apple music and
-            spotify! My main genres are RnB and Hip&ndash;Hop! I also played
-            video games professionally&sbquo; mainly a game called
+            fishing&sbquo; and piloting. Here&apos;s some fun facts about me! I
+            released a bunch of music officially on music platforms like apple
+            music and spotify! My main genres are RnB and Hip&ndash;Hop! I also
+            played video games professionally&sbquo; mainly a game called
             Valorant&sbquo; developed by riot games&sbquo; whilst I finished my
             university studies. This helped pay a lot of my bills while I
             studied! I enjoy gaming with friends as leisure time because it also
@@ -67,53 +125,201 @@ export default function Home() {
             lucky since it was a flight school & flight simulation company!
           </a>
         </ol>
-        <a className="font-[family-name:var(--font-geist-mono)]">
+        <a className="text-center text-2xl font-[family-name:var(--font-geist-mono)]">
           {" "}
-          Click any of the buttons below to get to more specific information!
+          These are some of the tech stacks that I utilize!
         </a>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Link
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="/"
+        <div className="flex gap-20 flex-wrap items-center justify-center pt-10 pb-10">
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/html.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/tailwind.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/javascript.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/ts.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover p-6"
+            src="/react.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+        </div>
+        <div className="flex gap-20 flex-wrap items-center justify-center pb-14">
+          <Image
+            className="rounded-full h-auto max-w-full object-cover invert"
+            src="/slownext.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/docker.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/kubernetes.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/swift.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+          <Image
+            className="rounded-full h-auto max-w-full object-cover"
+            src="/mongodb.gif"
+            alt="picture of raiyan"
+            width={200}
+            height={200}
+            priority
+          />
+        </div>
+        <a className="text-center text-2xl font-[family-name:var(--font-geist-mono)]">
+          {" "}
+          Captured moments of me enjoying my hobbies and unique life moments!
+        </a>
+        <div className="embla ">
+          <div
+            className="embla_viewport mx-auto mt-4 min-w-72 max-w-lg h-100"
+            ref={emblaRef}
           >
-            <Image
-              className=""
-              src="/home.svg"
-              alt="home logo"
-              width={20}
-              height={20}
-            />
-            Home
-          </Link>
-
-          <Link
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="/pages/techstacks"
-          >
-            Tech Stacks
-          </Link>
-          <Link
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="/pages/projects"
-          >
-            Projects
-          </Link>
-          <Link
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="/pages/workexp"
-          >
-            Work Experiences
-          </Link>
-          <Link
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="/pages/hobbies"
-          >
-            Hobbies
-          </Link>
+            <div className="embla__container max-h-100 object-scale-down h-100 w-100">
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img1.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img2.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img3.png"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img4.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img5.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img6.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img7.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img8.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img9.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img10.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img11.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img12.jpg"
+                  alt="carousel image"
+                />
+              </div>
+              <div className="embla__slide flex justify-center items-center">
+                <img
+                  className="embla__slide__img"
+                  src="/img13.jpg"
+                  alt="carousel image"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+
+      <footer className="pt-20 pb-20 mt-20 mb-20 row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="/"
@@ -126,7 +332,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Back to Home
+          Back to Top
         </Link>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
