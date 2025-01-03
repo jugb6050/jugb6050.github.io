@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 4000 }),
   ]);
 
