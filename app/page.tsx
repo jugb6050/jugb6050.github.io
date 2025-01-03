@@ -99,21 +99,21 @@ export default function Home() {
             relocate anywhere that is required! I would say that I enjoy
             full-stack development&sbquo; but I definitely have the most fun
             with front-end design! I love modern&sbquo; minimalistic designs. I
-            love diversifying my interests. It helps prevent burnout&sbquo; and
-            also gives you multiple perspectives of life. My hobbies include:
-            archery&sbquo; music production&sbquo; robotics&sbquo; gaming&sbquo;
-            fishing&sbquo; and piloting. Here&apos;s some fun facts about me! I
-            released a bunch of music officially on music platforms like apple
-            music and spotify! My main genres are RnB and Hip&ndash;Hop! I also
-            played video games professionally&sbquo; mainly a game called
-            Valorant&sbquo; developed by riot games&sbquo; whilst I finished my
-            university studies. This helped pay a lot of my bills while I
-            studied! I enjoy gaming with friends as leisure time because it also
-            helps offload your daily stresses. Last fact is that I&apos;m
-            currently finishing the next stages of my pilot&apos;s
-            license&sbquo; and have also worked as a flight instructor&sbquo; at
-            the same company that I worked as a software engineer for! I got
-            lucky since it was a flight school & flight simulation company!
+            love diversifying my interests. It helps me prevent burnout&sbquo;
+            gives me multiple perspectives of life experiences. My hobbies
+            include: archery&sbquo; music production&sbquo; robotics&sbquo;
+            gaming&sbquo; fishing&sbquo; and piloting. Here&apos;s some fun
+            facts about me! I released a bunch of music officially on music
+            platforms like apple music and spotify! My main genres are RnB and
+            Hip&ndash;Hop! I also used to play video games professionally&sbquo;
+            mainly a game called Valorant&sbquo; developed by riot games. This
+            helped pay a lot of my bills while I studied! I enjoy gaming with
+            friends as leisure time because it also helps offload my daily
+            stresses. Last fact is that I&apos;m currently finishing the next
+            stages of my pilot&apos;s license&sbquo; and have also worked as a
+            flight instructor. The same company that I do software development
+            and I.T work at also let me become a flight instructor! I got lucky
+            so that I could pursue both at once!
           </a>
         </ol>
         <a className="text-center text-2xl font-[family-name:var(--font-geist-mono)]">
