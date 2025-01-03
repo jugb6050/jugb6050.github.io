@@ -10,14 +10,6 @@ export default function Home() {
     Autoplay({ delay: 4000 }),
   ]);
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-10 pt-4 gap-16 sm:pt-2 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 justify-items-center items-center sm:items-center">
